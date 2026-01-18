@@ -4,6 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <script>
+          // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+          document.documentElement.classList.toggle(
+            "dark",
+            localStorage.theme === "dark" ||
+              (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
+          );
+        </script>
+
         <title inertia>{{ config('app.name', 'Laravel') }}</title>
 
         <link rel="icon" href="/favicon.ico" sizes="any">
