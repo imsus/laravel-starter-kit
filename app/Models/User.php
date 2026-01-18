@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -38,6 +40,7 @@ class User extends Authenticatable
      *
      * @return array<string, string>
      */
+    // @mago-ignore lint:no-literal-password
     protected function casts(): array
     {
         return [
