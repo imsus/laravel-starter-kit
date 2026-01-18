@@ -101,7 +101,7 @@ bun run dev
 ## Project Structure
 
 ```
-r2/
+/
 ├── app/                    # Laravel application
 │   ├── Http/Controllers/   # Controllers (auto-discovered by Wayfinder)
 │   ├── Models/             # Eloquent models
