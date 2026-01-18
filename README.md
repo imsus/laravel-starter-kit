@@ -31,15 +31,17 @@ This starter kit brings Nuxt-like conveniences to Vue development:
 ### Code Examples
 
 **Composables (auto-imported)**
+
 ```vue
 <script setup>
 // useDark() is auto-imported from resources/js/composables/
-const isDark = useDark()
-const toggleDark = useToggle(isDark)
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
 </script>
 ```
 
 **Components (auto-registered)**
+
 ```vue
 <template>
   <!-- DarkModeToggle.vue is auto-registered -->
@@ -48,6 +50,7 @@ const toggleDark = useToggle(isDark)
 ```
 
 **Icons (auto-imported)**
+
 ```vue
 <template>
   <IconHome />
@@ -57,11 +60,12 @@ const toggleDark = useToggle(isDark)
 ```
 
 **Wayfinder Routes (type-safe)**
+
 ```typescript
-import { show } from '@/actions/App/Http/Controllers/PostController'
+import { show } from "@/actions/App/Http/Controllers/PostController";
 
 // Type-safe routing
-const post = show(1) // { url: "/posts/1", method: "get" }
+const post = show(1); // { url: "/posts/1", method: "get" }
 ```
 
 ## Getting Started
