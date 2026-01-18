@@ -14,7 +14,9 @@ const modes = [
 </script>
 
 <template>
-  <div class="flex items-center gap-1 rounded-lg bg-gray-100 p-1 dark:bg-gray-800">
+  <div
+    class="flex items-center gap-1 rounded-lg bg-gray-100 p-1 dark:bg-gray-800"
+  >
     <button
       v-for="item in modes"
       :key="item.value"
