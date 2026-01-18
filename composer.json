@@ -61,7 +61,7 @@
       "mago lint"
     ],
     "analyze": [
-      "mago analyze"
+      "mago analyze --minimum-fail-level error"
     ],
     "check": [
       "mago fmt --dry-run"

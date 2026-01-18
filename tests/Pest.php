@@ -26,8 +26,6 @@ pest()->extend(Tests\TestCase::class)->use(Illuminate\Foundation\Testing\Refresh
  |
  */
 
-expect()->extend('toBeOne', fn() => $this->toBe(1));
-
 /*
  |--------------------------------------------------------------------------
  | Functions

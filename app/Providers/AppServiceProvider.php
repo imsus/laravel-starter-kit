@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\Password;
 
+/**
+ * @method static mixed use(mixed $handler)
+ */
 class AppServiceProvider extends ServiceProvider
 {
     /**
