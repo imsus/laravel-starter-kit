@@ -21,12 +21,12 @@ A modern Laravel starter kit with Inertia, Vue 3, and an enhanced developer expe
 
 This starter kit brings Nuxt-like conveniences to Vue development:
 
-| Feature | Description |
-|---------|-------------|
-| **Auto-import Composables** | Functions in `resources/js/composables/` are auto-imported |
-| **Auto-load Components** | Components in `resources/js/components/` are auto-registered |
-| **Auto-load Icons** | Any icon from Lucide/Phosphor is available as `<IconName />` |
-| **Type-safe Routes** | Wayfinder generates TypeScript functions from Laravel controllers |
+| Feature                     | Description                                                       |
+| --------------------------- | ----------------------------------------------------------------- |
+| **Auto-import Composables** | Functions in `resources/js/composables/` are auto-imported        |
+| **Auto-load Components**    | Components in `resources/js/components/` are auto-registered      |
+| **Auto-load Icons**         | Any icon from Lucide/Phosphor is available as `<IconName />`      |
+| **Type-safe Routes**        | Wayfinder generates TypeScript functions from Laravel controllers |
 
 ### Code Examples
 
@@ -87,16 +87,16 @@ bun run dev
 
 ### Available Commands
 
-| Command | Description |
-|---------|-------------|
-| `bun run dev` | Start Vite dev server |
-| `bun run build` | Build for production |
-| `bun run build:ssr` | Build for SSR |
-| `bun run format` | Format JS/TS/Vue (ultracite) |
-| `bun run lint` | Lint JS/TS/Vue (ultracite) |
-| `composer lint` | Lint PHP (mago) |
-| `composer format` | Format PHP (mago) |
-| `php artisan test` | Run Pest tests |
+| Command             | Description                  |
+| ------------------- | ---------------------------- |
+| `bun run dev`       | Start Vite dev server        |
+| `bun run build`     | Build for production         |
+| `bun run build:ssr` | Build for SSR                |
+| `bun run format`    | Format JS/TS/Vue (ultracite) |
+| `bun run lint`      | Lint JS/TS/Vue (ultracite)   |
+| `composer lint`     | Lint PHP (mago)              |
+| `composer format`   | Format PHP (mago)            |
+| `php artisan test`  | Run Pest tests               |
 
 ## Project Structure
 
@@ -127,14 +127,14 @@ r2/
 
 ## Configuration Files
 
-| File | Purpose |
-|------|---------|
+| File             | Purpose                                                 |
+| ---------------- | ------------------------------------------------------- |
 | `vite.config.ts` | Vite plugins (AutoImport, Components, Icons, Wayfinder) |
-| `tsconfig.json` | TypeScript configuration with paths alias |
-| `mago.toml` | Mago PHP linter/formatter rules |
-| `.oxlintrc.json` | Oxlint configuration |
-| `.oxfmtrc.jsonc` | Oxfmt configuration |
-| `boost.json` | Laravel Boost MCP configuration |
+| `tsconfig.json`  | TypeScript configuration with paths alias               |
+| `mago.toml`      | Mago PHP linter/formatter rules                         |
+| `.oxlintrc.json` | Oxlint configuration                                    |
+| `.oxfmtrc.jsonc` | Oxfmt configuration                                     |
+| `boost.json`     | Laravel Boost MCP configuration                         |
 
 ## Icon Sets
 
