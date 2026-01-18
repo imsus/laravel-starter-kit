@@ -1,0 +1,20 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "extends": [
+    "./node_modules/ultracite/config/oxlint/core/.oxlintrc.json",
+    "./node_modules/ultracite/config/oxlint/vue/.oxlintrc.json"
+  ],
+  "rules": {
+    "eslint-plugin-unicorn/filename-case": "off",
+    "eslint-plugin-jest/no-disabled-tests": "off",
+    "eslint-plugin-jest/no-focused-tests": "off",
+    "eslint-plugin-jest/require-hook": "off",
+    "eslint-plugin-jest/valid-describe-callback": "off",
+    "eslint-plugin-jest/expect-expect": "off",
+    "eslint/func-style": "off",
+    "eslint/no-duplicate-imports": "off",
+    "eslint/no-inline-comments": "off",
+    "typescript-eslint/no-import-type-side-effects": "off",
+    "eslint-plugin-import/consistent-type-specifier-style": "off"
+  }
+}
