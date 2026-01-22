@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { useDark } from "@/composables/dark";
+import { useTheme } from "@/composables/dark";
 import IconSun from "~icons/ph/sun";
 import IconMoon from "~icons/ph/moon";
 import IconMonitor from "~icons/ph/monitor";
 
-const { mode, setMode } = useDark();
+const { mode, setMode } = useTheme();
 
 const modes = [
   { icon: IconSun, label: "Light", value: "light" },

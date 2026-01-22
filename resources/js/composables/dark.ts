@@ -1,6 +1,6 @@
 import { useColorMode } from "@vueuse/core";
 
-export function useDark() {
+export function useTheme() {
   const mode = useColorMode({
     attribute: "class",
     modes: {

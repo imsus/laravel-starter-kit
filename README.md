@@ -34,8 +34,8 @@ This starter kit brings Nuxt-like conveniences to Vue development:
 
 ```vue
 <script setup>
-// useDark() is auto-imported from resources/js/composables/
-const isDark = useDark();
+// useTheme() is auto-imported from resources/js/composables/
+const { isDark, toggleDark } = useTheme();
 const toggleDark = useToggle(isDark);
 </script>
 ```
