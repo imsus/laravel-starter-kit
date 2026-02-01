@@ -39,9 +39,9 @@ jobs:
 
       - name: Run Mago
         run: |
-          mago format --dry-run
-          mago lint --reporting-format=github
-          mago analyze --reporting-format=github
+          composer format --dry-run
+          composer lint --reporting-format=github
+          composer analyze --reporting-format=github
 
       - name: Lint & Format Frontend
         run: bun run lint && bun run format
