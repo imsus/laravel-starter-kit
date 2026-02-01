@@ -333,18 +333,23 @@ Heat Exchanger: 78% capacity</code></pre>
         <figure>
           <svg
             viewBox="0 0 400 200"
-            style="inline-size: 100%; block-size: auto; background: var(--color-surface); border-radius: 0.5rem;"
+            style="
+              inline-size: 100%;
+              block-size: auto;
+              background: var(--color-surface);
+              border-radius: 0.5rem;
+            "
             aria-label="Diagram of spacecraft cross-section"
           >
             <defs>
               <linearGradient id="hull" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop
                   offset="0%"
-                  style="stop-color:var(--color-muted);stop-opacity:0.3"
+                  style="stop-color: var(--color-muted); stop-opacity: 0.3"
                 />
                 <stop
                   offset="100%"
-                  style="stop-color:var(--color-accent);stop-opacity:0.1"
+                  style="stop-color: var(--color-accent); stop-opacity: 0.1"
                 />
               </linearGradient>
             </defs>
@@ -425,127 +430,147 @@ Heat Exchanger: 78% capacity</code></pre>
 <style>
 /* Additional demo-specific styles using the same methodology */
 @layer demo {
-    .mission-header {
-        padding-block: 4rem 2rem;
-        text-align: center;
-        background: linear-gradient(135deg, color-mix(in srgb, var(--color-accent) 10%, transparent), transparent);
-        border-block-end: 1px solid var(--color-border);
-        margin-block-end: var(--space-xl);
-    }
+  .mission-header {
+    padding-block: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--color-accent) 10%, transparent),
+      transparent
+    );
+    border-block-end: 1px solid var(--color-border);
+    margin-block-end: var(--space-xl);
+  }
 
-    .status-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: var(--space-md);
-        margin-block: var(--space-lg);
-    }
+  .status-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-md);
+    margin-block: var(--space-lg);
+  }
 
-    .status-card {
-        padding: var(--space-md);
-        border: 1px solid var(--color-border);
-        border-radius: 0.5rem;
-        background: var(--color-surface);
-        container-type: inline-size; /* Enable container query units */
-    }
+  .status-card {
+    padding: var(--space-md);
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    background: var(--color-surface);
+    container-type: inline-size; /* Enable container query units */
+  }
 
-    .status-card h3 {
-        font-size: clamp(1rem, 4cqi, 1.25rem); /* cqi units from container */
-        margin-block-end: 0.5rem;
-        color: var(--color-accent);
-    }
+  .status-card h3 {
+    font-size: clamp(1rem, 4cqi, 1.25rem); /* cqi units from container */
+    margin-block-end: 0.5rem;
+    color: var(--color-accent);
+  }
 
-    .telemetry-log {
-        font-family: var(--font-mono);
-        font-size: 0.875rem;
-        background: var(--color-surface);
-        padding: var(--space-md);
-        border-radius: 0.5rem;
-        max-block-size: 300px;
-        overflow-y: auto;
-    }
+  .telemetry-log {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    background: var(--color-surface);
+    padding: var(--space-md);
+    border-radius: 0.5rem;
+    max-block-size: 300px;
+    overflow-y: auto;
+  }
 
-    .mission-timeline {
-        margin-block: var(--space-lg);
-        padding-inline-start: 0;
-    }
+  .mission-timeline {
+    margin-block: var(--space-lg);
+    padding-inline-start: 0;
+  }
 
-    .mission-timeline li {
-        position: relative;
-        padding-inline-start: var(--space-lg);
-        padding-block: var(--space-sm);
-        border-inline-start: 2px solid var(--color-border);
-    }
+  .mission-timeline li {
+    position: relative;
+    padding-inline-start: var(--space-lg);
+    padding-block: var(--space-sm);
+    border-inline-start: 2px solid var(--color-border);
+  }
 
-    .mission-timeline li::before {
-        content: '';
-        position: absolute;
-        inset-inline-start: -5px;
-        inset-block-start: 1.25rem;
-        inline-size: 8px;
-        block-size: 8px;
-        border-radius: 50%;
-        background: var(--color-success, #198754);
-    }
+  .mission-timeline li::before {
+    content: "";
+    position: absolute;
+    inset-inline-start: -5px;
+    inset-block-start: 1.25rem;
+    inline-size: 8px;
+    block-size: 8px;
+    border-radius: 50%;
+    background: var(--color-success, #198754);
+  }
 
-    .tech-stack dt {
-        font-weight: 600;
-        color: var(--color-accent);
-        margin-block-start: var(--space-md);
-    }
+  .tech-stack dt {
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-block-start: var(--space-md);
+  }
 
-    .tech-stack dd {
-        margin-inline-start: 0;
-        color: var(--color-muted);
-    }
+  .tech-stack dd {
+    margin-inline-start: 0;
+    color: var(--color-muted);
+  }
 
-    /* Demonstrating :target for in-page navigation */
-    section:target {
-        animation: highlight 2s ease;
-    }
+  /* Demonstrating :target for in-page navigation */
+  section:target {
+    animation: highlight 2s ease;
+  }
 
-    @keyframes highlight {
-        0% { background-color: color-mix(in srgb, var(--color-accent) 20%, transparent); }
-        100% { background-color: transparent; }
+  @keyframes highlight {
+    0% {
+      background-color: color-mix(
+        in srgb,
+        var(--color-accent) 20%,
+        transparent
+      );
     }
-
-    .form-section {
-        max-inline-size: 65ch;
-        margin-inline: auto;
+    100% {
+      background-color: transparent;
     }
+  }
 
-    .input-group {
-        margin-block-end: var(--space-md);
-    }
+  .form-section {
+    max-inline-size: 65ch;
+    margin-inline: auto;
+  }
 
-    .checkbox-group {
-        display: flex;
-        align-items: center;
-        gap: var(--space-xs);
-        margin-block: var(--space-sm);
-    }
+  .input-group {
+    margin-block-end: var(--space-md);
+  }
 
-    .palette-demo {
-        display: flex;
-        gap: var(--space-sm);
-        flex-wrap: wrap;
-        margin-block: var(--space-md);
-    }
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    margin-block: var(--space-sm);
+  }
 
-    .color-swatch {
-        inline-size: 80px;
-        block-size: 80px;
-        border-radius: 0.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.75rem;
-        font-weight: 600;
-        border: 1px solid var(--color-border);
-        box-shadow: 0 2px 4px color-mix(in srgb, black 10%, transparent);
-    }
+  .palette-demo {
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+    margin-block: var(--space-md);
+  }
 
-    .swatch-accent { background: var(--color-accent); color: white; }
-    .swatch-surface { background: var(--color-surface); }
-    .swatch-muted { background: var(--color-muted); color: white; }
+  .color-swatch {
+    inline-size: 80px;
+    block-size: 80px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 2px 4px color-mix(in srgb, black 10%, transparent);
+  }
+
+  .swatch-accent {
+    background: var(--color-accent);
+    color: white;
+  }
+  .swatch-surface {
+    background: var(--color-surface);
+  }
+  .swatch-muted {
+    background: var(--color-muted);
+    color: white;
+  }
 }
 </style>
