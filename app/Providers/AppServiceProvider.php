@@ -11,7 +11,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\Password;
 
 /**
- * @method static mixed use(mixed $handler)
+ * @method static void use(string $handler)
  */
 class AppServiceProvider extends ServiceProvider
 {

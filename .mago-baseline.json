@@ -1,0 +1,7 @@
+variant = "loose"
+
+[[issues]]
+file = "app/Providers/AppServiceProvider.php"
+code = "non-documented-method"
+message = 'Ambiguous method call to `use` on class `Illuminate\Support\Facades\Date`.'
+count = 1
