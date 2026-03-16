@@ -11,6 +11,6 @@ export {};
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    DarkModeToggle: typeof import('./components/DarkModeToggle.vue')['default']
+    DarkModeToggle: typeof import('./../components/DarkModeToggle.vue')['default']
   }
 }

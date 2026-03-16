@@ -5,8 +5,16 @@
     "./node_modules/ultracite/config/oxlint/vue/.oxlintrc.json"
   ],
   "ignorePatterns": [
-    "resources/js/auto-imports.d.ts",
-    "resources/js/components.d.ts"
+    "resources/js/types/auto-imports.d.ts",
+    "resources/js/types/components.d.ts",
+    "vite.config.ts",
+    "postcss.config.js",
+    "tailwind.config.js",
+    "tailwind.config.ts",
+    "tsconfig.json",
+    "tsconfig.*.json",
+    "*.config.js",
+    "*.config.ts"
   ],
   "rules": {
     "eslint-plugin-unicorn/filename-case": "off",

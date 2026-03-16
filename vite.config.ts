@@ -1,13 +1,19 @@
+// oxlint-disable-next-line import/no-nodejs-modules
+import { dirname, resolve } from "node:path";
+// oxlint-disable-next-line import/no-nodejs-modules
+import { fileURLToPath } from "node:url";
+
 import { wayfinder } from "@laravel/vite-plugin-wayfinder";
 import tailwindcss from "@tailwindcss/vite";
 import vue from "@vitejs/plugin-vue";
 import laravel from "laravel-vite-plugin";
-import { resolve } from "node:path";
-import AutoImport from "unplugin-auto-import/vite";
-import IconsResolver from "unplugin-icons/resolver";
-import Icons from "unplugin-icons/vite";
-import Components from "unplugin-vue-components/vite";
+import autoImport from "unplugin-auto-import/vite";
+import iconsResolver from "unplugin-icons/resolver";
+import icons from "unplugin-icons/vite";
+import components from "unplugin-vue-components/vite";
 import { defineConfig } from "vite";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   plugins: [
@@ -28,24 +34,25 @@ export default defineConfig({
     wayfinder({
       formVariants: true,
     }),
-    AutoImport({
+    autoImport({
       dirs: ["resources/js/composables"],
-      dts: "resources/js/auto-imports.d.ts",
+      dts: "resources/js/types/auto-imports.d.ts",
       imports: ["vue", "vue-router", "@vueuse/core"],
       vueTemplate: true,
     }),
-    Components({
+    components({
       dirs: ["resources/js/components"],
-      dts: "resources/js/components.d.ts",
-      resolvers: [IconsResolver()],
+      dts: "resources/js/types/components.d.ts",
+      resolvers: [iconsResolver()],
     }),
-    Icons({
+    icons({
       autoInstall: true,
     }),
   ],
   resolve: {
     alias: {
       "@": resolve(__dirname, "resources/js"),
+      "@css": resolve(__dirname, "resources/css"),
     },
   },
 });

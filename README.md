@@ -5,7 +5,7 @@ A modern Laravel starter kit with Inertia, Vue 3, and an enhanced developer expe
 ## Tech Stack
 
 - **PHP** 8.4+ with Laravel 12
-- **Runtime**: Bun
+- **Runtime**: pnpm
 - **Frontend**: Vue 3 with Inertia v2
 - **Styling**: Tailwind CSS 4
 - **State Management**: VueUse
@@ -73,7 +73,7 @@ const post = show(1); // { url: "/posts/1", method: "get" }
 ### Prerequisites
 
 - PHP 8.4+
-- Bun
+- pnpm
 - Composer
 
 ### Installation
@@ -83,24 +83,24 @@ const post = show(1); // { url: "/posts/1", method: "get" }
 composer install
 
 # Install JavaScript dependencies
-bun install
+pnpm install
 
 # Start development servers
-bun run dev
+pnpm run dev
 ```
 
 ### Available Commands
 
-| Command             | Description                  |
-| ------------------- | ---------------------------- |
-| `bun run dev`       | Start Vite dev server        |
-| `bun run build`     | Build for production         |
-| `bun run build:ssr` | Build for SSR                |
-| `bun run format`    | Format JS/TS/Vue (ultracite) |
-| `bun run lint`      | Lint JS/TS/Vue (ultracite)   |
-| `composer lint`     | Lint PHP (mago)              |
-| `composer format`   | Format PHP (mago)            |
-| `php artisan test`  | Run Pest tests               |
+| Command              | Description                  |
+| -------------------- | ---------------------------- |
+| `pnpm run dev`       | Start Vite dev server        |
+| `pnpm run build`     | Build for production         |
+| `pnpm run build:ssr` | Build for SSR                |
+| `pnpm run format`    | Format JS/TS/Vue (ultracite) |
+| `pnpm run lint`      | Lint JS/TS/Vue (ultracite)   |
+| `composer lint`      | Lint PHP (mago)              |
+| `composer format`    | Format PHP (mago)            |
+| `php artisan test`   | Run Pest tests               |
 
 ## Project Structure
 
