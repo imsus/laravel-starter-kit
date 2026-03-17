@@ -1,6 +1,6 @@
 ---
 name: inertia-vue-development
-description: "Develops Inertia.js v2 Vue client-side applications. Activates when creating Vue pages, forms, or navigation; using <Link>, <Form>, useForm, or router; working with deferred props, prefetching, or polling; or when user mentions Vue with Inertia, Vue pages, Vue forms, or Vue navigation."
+description: "Develops Inertia.js v3 Vue client-side applications. Activates when creating Vue pages, forms, or navigation; using <Link>, <Form>, useForm, or router; working with deferred props, prefetching, or polling; or when user mentions Vue with Inertia, Vue pages, Vue forms, or Vue navigation."
 license: MIT
 metadata:
   author: laravel
@@ -15,12 +15,12 @@ Activate this skill when:
 - Creating or modifying Vue page components for Inertia
 - Working with forms in Vue (using `<Form>` or `useForm`)
 - Implementing client-side navigation with `<Link>` or `router`
-- Using v2 features: deferred props, prefetching, WhenVisible, InfiniteScroll, once props, flash data, or polling
+- Using v3 features: deferred props, prefetching, WhenVisible, InfiniteScroll, once props, flash data, polling, optimistic updates, instant visits
 - Building Vue-specific features with the Inertia protocol
 
 ## Documentation
 
-Use `search-docs` for detailed Inertia v2 Vue patterns and documentation.
+Use `search-docs` for detailed Inertia v3 Vue patterns and documentation.
 
 ## Basic Usage
 
@@ -280,7 +280,7 @@ function submit() {
 </template>
 ```
 
-## Inertia v2 Features
+## Inertia v3 Features
 
 ### Deferred Props
 

@@ -4,9 +4,9 @@ A modern Laravel starter kit with Inertia, Vue 3, and an enhanced developer expe
 
 ## Tech Stack
 
-- **PHP** 8.4+ with Laravel 12
+- **PHP** 8.4+ with Laravel 13
 - **Runtime**: Vite+ (pnpm wrapper)
-- **Frontend**: Vue 3 with Inertia v2
+- **Frontend**: Vue 3 with Inertia v3
 - **Styling**: Tailwind CSS 4
 - **State Management**: VueUse
 - **Icons**: Lucide + Phosphor (auto-imported)
