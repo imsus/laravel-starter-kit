@@ -1,6 +1,4 @@
-// oxlint-disable-next-line import/no-nodejs-modules
 import { dirname, resolve } from "node:path";
-// oxlint-disable-next-line import/no-nodejs-modules
 import { fileURLToPath } from "node:url";
 
 import { wayfinder } from "@laravel/vite-plugin-wayfinder";
@@ -11,11 +9,21 @@ import autoImport from "unplugin-auto-import/vite";
 import iconsResolver from "unplugin-icons/resolver";
 import icons from "unplugin-icons/vite";
 import components from "unplugin-vue-components/vite";
-import { defineConfig } from "vite";
+import { defineConfig } from "vite-plus";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
+  staged: {
+    "*": "vp check --fix",
+  },
+  lint: {
+    ignorePatterns: ["resources/js/types/auto-imports.d.ts", "resources/js/types/components.d.ts"],
+    options: {
+      typeAware: true,
+      typeCheck: true,
+    },
+  },
   plugins: [
     laravel({
       input: ["resources/js/app.ts"],

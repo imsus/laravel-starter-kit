@@ -19,9 +19,8 @@ createServer(
       page,
       render: renderToString,
       resolve: resolvePage,
-      setup: ({ App, props, plugin }) =>
-        createSSRApp({ render: () => h(App, props) }).use(plugin),
+      setup: ({ App, props, plugin }) => createSSRApp({ render: () => h(App, props) }).use(plugin),
       title: (title) => (title ? `${title} - ${appName}` : appName),
     }),
-  { cluster: true }
+  { cluster: true },
 );
