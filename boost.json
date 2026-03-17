@@ -1,8 +1,9 @@
 {
-  "agents": ["claude_code"],
+  "agents": ["opencode"],
   "guidelines": true,
   "herd_mcp": false,
   "mcp": true,
+  "nightwatch_mcp": false,
   "sail": false,
   "skills": ["wayfinder-development", "pest-testing", "inertia-vue-development"]
 }
