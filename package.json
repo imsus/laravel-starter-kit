@@ -1,5 +1,6 @@
 {
   "$schema": "https://www.schemastore.org/package.json",
+  "name": "@imsus/laravel-inertia-vue-starter-kit",
   "private": true,
   "type": "module",
   "scripts": {

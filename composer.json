@@ -1,11 +1,15 @@
 {
   "$schema": "https://getcomposer.org/schema.json",
-  "name": "laravel/blank-vue-starter-kit",
+  "name": "imsus/laravel-inertia-vue-starter-kit",
   "type": "project",
-  "description": "The skeleton application for the Laravel framework.",
+  "description": "A Laravel starter kit with Inertia.js, Vue 3, and Vite+.",
   "keywords": [
     "laravel",
-    "framework"
+    "inertia",
+    "vue",
+    "vite",
+    "starter-kit",
+    "spa"
   ],
   "license": "MIT",
   "require": {
