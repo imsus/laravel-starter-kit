@@ -1,7 +1,8 @@
 <script setup lang="ts">
+import { AppPageProps } from "@/types";
 import { Head, usePage } from "@inertiajs/vue3";
 
-const page = usePage();
+const page = usePage<AppPageProps>();
 const seo = page.props.seo;
 </script>
 

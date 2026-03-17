@@ -12,21 +12,15 @@ importers:
 
   .:
     dependencies:
+      '@inertiajs/vite':
+        specifier: 3.0.0-beta.1
+        version: 3.0.0-beta.1(axios@1.13.6)(vite@7.3.1(@types/node@25.5.0)(jiti@2.6.1)(lightningcss@1.32.0))
       '@inertiajs/vue3':
-        specifier: ^2.3.18
-        version: 2.3.18(vue@3.5.30(typescript@5.9.3))
+        specifier: 3.0.0-beta.3
+        version: 3.0.0-beta.3(axios@1.13.6)(vue@3.5.30(typescript@5.9.3))
       '@vueuse/core':
         specifier: ^14.2.1
         version: 14.2.1(vue@3.5.30(typescript@5.9.3))
-      class-variance-authority:
-        specifier: ^0.7.1
-        version: 0.7.1
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
-      tailwind-merge:
-        specifier: ^3.5.0
-        version: 3.5.0
       vue:
         specifier: ^3.5.30
         version: 3.5.30(typescript@5.9.3)
@@ -277,11 +271,29 @@ packages:
   '@iconify/utils@3.1.0':
     resolution: {integrity: sha512-Zlzem1ZXhI1iHeeERabLNzBHdOa4VhQbqAcOQaMKuTuyZCpwKbC2R4Dd0Zo3g9EAc+Y4fiarO8HIHRAth7+skw==}
 
-  '@inertiajs/core@2.3.18':
-    resolution: {integrity: sha512-StOszdE28nx9uxY4I28d7oLRGLdu/F9pRgWody2k29Qe9WqAoPHVQ5VJabTi2RTYHJXZrZZ+Wgtw3qVRZMrwOA==}
+  '@inertiajs/core@3.0.0-beta.1':
+    resolution: {integrity: sha512-WJms9mpKtEcx7SVghc5mx5FXa5DOnMhCwm6AZgJICzCehZmCohxsF1c9gBzAdkmP/9hmlj5LPYYiBGQLe1LeWA==}
+    peerDependencies:
+      axios: ^1.13.2
+    peerDependenciesMeta:
+      axios:
+        optional: true
 
-  '@inertiajs/vue3@2.3.18':
-    resolution: {integrity: sha512-027MSfejuJi0Tz5thCbvr5jfEYdKNnTS5uWTmnEET/AOibL3c3wMr+Fp13vMA0TRbr/clGiCEq/57y8vNQsxGg==}
+  '@inertiajs/core@3.0.0-beta.3':
+    resolution: {integrity: sha512-vCSt7+Q+iX/t5wNoXlI2E2RgVZiBdli6wguvFZ46gTYyPKFQLpKYXtNhkAZRl3Yvk+Sqo5NXNJZ8RRvWI0M+yQ==}
+    peerDependencies:
+      axios: ^1.13.2
+    peerDependenciesMeta:
+      axios:
+        optional: true
+
+  '@inertiajs/vite@3.0.0-beta.1':
+    resolution: {integrity: sha512-FEjrG8ZQ3GD8t0PpSHdNPGFAuu+XPUJledgUYqE/aPHN1ojEYEi6SyjuX1yh5lN2qfe4VZR2NWZdx9+JWC8Hog==}
+    peerDependencies:
+      vite: ^6.0.0 || ^7.0.0
+
+  '@inertiajs/vue3@3.0.0-beta.3':
+    resolution: {integrity: sha512-szjC2GkkLdJB/eTsJc4yUu0olGKhboA/TZ78FW44r8Na62AvJgGwDL5oU03zsH5rgWHTE8q6p9iSHThMs2cfHw==}
     peerDependencies:
       vue: ^3.0.0
 
@@ -1078,10 +1090,6 @@ packages:
     resolution: {integrity: sha512-Sp1ablJ0ivDkSzjcaJdxEunN5/XvksFJ2sMBFfq6x0ryhQV/2b/KwFe21cMpmHtPOSij8K99/wSfoEuTObmuMQ==}
     engines: {node: '>= 0.4'}
 
-  call-bound@1.0.4:
-    resolution: {integrity: sha512-+ys997U96po4Kx/ABpBCqhA9EuxJaQWDQg7295H4hBphv3IZg0boBKuwYpt4YXp6MZ5AmZQnU/tyMTlRpaSejg==}
-    engines: {node: '>= 0.4'}
-
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
@@ -1090,16 +1098,9 @@ packages:
     resolution: {integrity: sha512-TQMmc3w+5AxjpL8iIiwebF73dRDF4fBIieAqGn9RGCWaEVwQ6Fb2cGe31Yns0RRIzii5goJ1Y7xbMwo1TxMplw==}
     engines: {node: '>= 20.19.0'}
 
-  class-variance-authority@0.7.1:
-    resolution: {integrity: sha512-Ka+9Trutv7G8M6WT6SeiRWz792K5qEqIGEGzXKhAE6xOWAY6pPH8U+9IY3oCMv6kqTmLsv7Xh/2w2RigkePMsg==}
-
   cliui@8.0.1:
     resolution: {integrity: sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==}
     engines: {node: '>=12'}
-
-  clsx@2.1.1:
-    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
-    engines: {node: '>=6'}
 
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -1273,8 +1274,21 @@ packages:
   js-tokens@9.0.1:
     resolution: {integrity: sha512-mxa9E9ITFOt0ban3j6L5MpjwegGz6lBQmM1IJkWeBZGcMxto50+eWdjC/52xDbS2vy0k7vIMK0Fe2wfL9OQSpQ==}
 
-  laravel-precognition@1.0.2:
-    resolution: {integrity: sha512-0H08JDdMWONrL/N314fvsO3FATJwGGlFKGkMF3nNmizVFJaWs17816iM+sX7Rp8d5hUjYCx6WLfsehSKfaTxjg==}
+  laravel-precognition@2.0.0-beta.2:
+    resolution: {integrity: sha512-Sg5hOSO4tYXt/ICYJPDcY+HZjP3kuPEhcRx6sNs11q8ndV/kSe2i9uTo3Q9hULBi7ftVMwoS04DbI4ihYhPimg==}
+    peerDependencies:
+      axios: ^1.4.0
+    peerDependenciesMeta:
+      axios:
+        optional: true
+
+  laravel-precognition@2.0.0-beta.3:
+    resolution: {integrity: sha512-2askALMGfTAuB5WEKyEcQsNUn6limHaqd7s37CJPy3jL9uFEb/sVnlIKkcjin4UIsGFdshi8JGIBuoWJWNyMHA==}
+    peerDependencies:
+      axios: ^1.4.0
+    peerDependenciesMeta:
+      axios:
+        optional: true
 
   laravel-vite-plugin@2.1.0:
     resolution: {integrity: sha512-z+ck2BSV6KWtYcoIzk9Y5+p4NEjqM+Y4i8/H+VZRLq0OgNjW2DqyADquwYu5j8qRvaXwzNmfCWl1KrMlV1zpsg==}
@@ -1468,10 +1482,6 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  object-inspect@1.13.4:
-    resolution: {integrity: sha512-W67iLl4J2EXEGTbfeHCffrjDfitvLANg0UlX3wFUUSTx92KXRFegMHUVgSqE+wvhAbi4WqjGg9czysTV2Epbew==}
-    engines: {node: '>= 0.4'}
-
   obug@2.1.1:
     resolution: {integrity: sha512-uTqF9MuPraAQ+IsnPf366RG4cP9RtUi7MLO1N3KEc+wb0a6yKpeL0lmk2IB1jY5KHPAlTc6T/JRdC/YqxHNwkQ==}
 
@@ -1539,10 +1549,6 @@ packages:
   proxy-from-env@1.1.0:
     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
 
-  qs@6.15.0:
-    resolution: {integrity: sha512-mAZTtNCeetKMH+pSjrb76NAM8V9a05I9aBZOHztWy/UqcJdQYNsf59vrRKWnojAT9Y+GbIvoTBC++CPHqpDBhQ==}
-    engines: {node: '>=0.6'}
-
   quansync@0.2.11:
     resolution: {integrity: sha512-AifT7QEbW9Nri4tAwR5M/uzpBuqfZf+zwaEM/QkzEjj7NBuFD2rBuy0K3dE+8wltbezDV7JMA0WfnCPYRSYbXA==}
 
@@ -1577,22 +1583,6 @@ packages:
     resolution: {integrity: sha512-ObmnIF4hXNg1BqhnHmgbDETF8dLPCggZWBjkQfhZpbszZnYur5DUljTcCHii5LC3J5E0yeO/1LIMyH+UvHQgyw==}
     engines: {node: '>= 0.4'}
 
-  side-channel-list@1.0.0:
-    resolution: {integrity: sha512-FCLHtRD/gnpCiCHEiJLOwdmFP+wzCmDEkc9y7NsYxeF4u7Btsn1ZuwgwJGxImImHicJArLP4R0yX4c2KCrMrTA==}
-    engines: {node: '>= 0.4'}
-
-  side-channel-map@1.0.1:
-    resolution: {integrity: sha512-VCjCNfgMsby3tTdo02nbjtM/ewra6jPHmpThenkTYh8pG9ucZ/1P8So4u4FGBek/BjpOVsDCMoLA/iuBKIFXRA==}
-    engines: {node: '>= 0.4'}
-
-  side-channel-weakmap@1.0.2:
-    resolution: {integrity: sha512-WPS/HvHQTYnHisLo9McqBHOJk2FkHO/tlpvldyrnem4aeQp4hai3gythswg6p01oSoTl58rcpiFAjF2br2Ak2A==}
-    engines: {node: '>= 0.4'}
-
-  side-channel@1.1.0:
-    resolution: {integrity: sha512-ZX99e6tRweoUXqR+VBrslhda51Nh5MTQwou5tnUDgbtyM0dBgmhEDtWGP/xbKn6hqfPRHujUNwz5fy/wbbhnpw==}
-    engines: {node: '>= 0.4'}
-
   sirv@3.0.2:
     resolution: {integrity: sha512-2wcC/oGxHis/BoHkkPwldgiPSYcpZK3JU28WoMVv55yHJgcZ8rlXvuG9iZggz+sU1d4bRgIGASwyWqjxu3FM0g==}
     engines: {node: '>=18'}
@@ -1622,9 +1612,6 @@ packages:
   supports-color@8.1.1:
     resolution: {integrity: sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==}
     engines: {node: '>=10'}
-
-  tailwind-merge@3.5.0:
-    resolution: {integrity: sha512-I8K9wewnVDkL1NTGoqWmVEIlUcB9gFriAEkXkfCjX5ib8ezGxtR3xD7iZIxrfArjEsH7F1CHD4RFUtxefdqV/A==}
 
   tailwindcss@0.0.0-insiders.bb2f170:
     resolution: {integrity: sha512-tFQY/NljumuklEwRf2hcb0wvEaQQmNuMTqb5imSOf/Y8gsH34xm3UYc0uEU3+2Jx+ySjzUBQcr1mn5+aTnoWkQ==}
@@ -1936,25 +1923,40 @@ snapshots:
       '@iconify/types': 2.0.0
       mlly: 1.8.1
 
-  '@inertiajs/core@2.3.18':
+  '@inertiajs/core@3.0.0-beta.1(axios@1.13.6)':
     dependencies:
+      '@jridgewell/trace-mapping': 0.3.31
       '@types/lodash-es': 4.17.12
-      axios: 1.13.6
-      laravel-precognition: 1.0.2
+      laravel-precognition: 2.0.0-beta.2(axios@1.13.6)
       lodash-es: 4.17.23
-      qs: 6.15.0
-    transitivePeerDependencies:
-      - debug
+    optionalDependencies:
+      axios: 1.13.6
 
-  '@inertiajs/vue3@2.3.18(vue@3.5.30(typescript@5.9.3))':
+  '@inertiajs/core@3.0.0-beta.3(axios@1.13.6)':
     dependencies:
-      '@inertiajs/core': 2.3.18
+      '@jridgewell/trace-mapping': 0.3.31
       '@types/lodash-es': 4.17.12
-      laravel-precognition: 1.0.2
+      laravel-precognition: 2.0.0-beta.3(axios@1.13.6)
+      lodash-es: 4.17.23
+    optionalDependencies:
+      axios: 1.13.6
+
+  '@inertiajs/vite@3.0.0-beta.1(axios@1.13.6)(vite@7.3.1(@types/node@25.5.0)(jiti@2.6.1)(lightningcss@1.32.0))':
+    dependencies:
+      '@inertiajs/core': 3.0.0-beta.1(axios@1.13.6)
+      vite: 7.3.1(@types/node@25.5.0)(jiti@2.6.1)(lightningcss@1.32.0)
+    transitivePeerDependencies:
+      - axios
+
+  '@inertiajs/vue3@3.0.0-beta.3(axios@1.13.6)(vue@3.5.30(typescript@5.9.3))':
+    dependencies:
+      '@inertiajs/core': 3.0.0-beta.3(axios@1.13.6)
+      '@types/lodash-es': 4.17.12
+      laravel-precognition: 2.0.0-beta.3(axios@1.13.6)
       lodash-es: 4.17.23
       vue: 3.5.30(typescript@5.9.3)
     transitivePeerDependencies:
-      - debug
+      - axios
 
   '@jridgewell/gen-mapping@0.3.13':
     dependencies:
@@ -2466,7 +2468,8 @@ snapshots:
 
   assertion-error@2.0.1: {}
 
-  asynckit@0.4.0: {}
+  asynckit@0.4.0:
+    optional: true
 
   axios@1.13.6:
     dependencies:
@@ -2475,6 +2478,7 @@ snapshots:
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
+    optional: true
 
   cac@6.7.14: {}
 
@@ -2482,11 +2486,7 @@ snapshots:
     dependencies:
       es-errors: 1.3.0
       function-bind: 1.1.2
-
-  call-bound@1.0.4:
-    dependencies:
-      call-bind-apply-helpers: 1.0.2
-      get-intrinsic: 1.3.0
+    optional: true
 
   chalk@4.1.2:
     dependencies:
@@ -2497,17 +2497,11 @@ snapshots:
     dependencies:
       readdirp: 5.0.0
 
-  class-variance-authority@0.7.1:
-    dependencies:
-      clsx: 2.1.1
-
   cliui@8.0.1:
     dependencies:
       string-width: 4.2.3
       strip-ansi: 6.0.1
       wrap-ansi: 7.0.0
-
-  clsx@2.1.1: {}
 
   color-convert@2.0.1:
     dependencies:
@@ -2518,6 +2512,7 @@ snapshots:
   combined-stream@1.0.8:
     dependencies:
       delayed-stream: 1.0.0
+    optional: true
 
   concurrently@9.2.1:
     dependencies:
@@ -2540,7 +2535,8 @@ snapshots:
 
   csstype@3.2.3: {}
 
-  delayed-stream@1.0.0: {}
+  delayed-stream@1.0.0:
+    optional: true
 
   detect-libc@2.1.2: {}
 
@@ -2549,6 +2545,7 @@ snapshots:
       call-bind-apply-helpers: 1.0.2
       es-errors: 1.3.0
       gopd: 1.2.0
+    optional: true
 
   emoji-regex@8.0.0: {}
 
@@ -2559,15 +2556,18 @@ snapshots:
 
   entities@7.0.1: {}
 
-  es-define-property@1.0.1: {}
+  es-define-property@1.0.1:
+    optional: true
 
-  es-errors@1.3.0: {}
+  es-errors@1.3.0:
+    optional: true
 
   es-module-lexer@1.7.0: {}
 
   es-object-atoms@1.1.1:
     dependencies:
       es-errors: 1.3.0
+    optional: true
 
   es-set-tostringtag@2.1.0:
     dependencies:
@@ -2575,6 +2575,7 @@ snapshots:
       get-intrinsic: 1.3.0
       has-tostringtag: 1.0.2
       hasown: 2.0.2
+    optional: true
 
   esbuild@0.27.4:
     optionalDependencies:
@@ -2621,7 +2622,8 @@ snapshots:
     optionalDependencies:
       picomatch: 4.0.3
 
-  follow-redirects@1.15.11: {}
+  follow-redirects@1.15.11:
+    optional: true
 
   form-data@4.0.5:
     dependencies:
@@ -2630,11 +2632,13 @@ snapshots:
       es-set-tostringtag: 2.1.0
       hasown: 2.0.2
       mime-types: 2.1.35
+    optional: true
 
   fsevents@2.3.3:
     optional: true
 
-  function-bind@1.1.2: {}
+  function-bind@1.1.2:
+    optional: true
 
   get-caller-file@2.0.5: {}
 
@@ -2650,27 +2654,33 @@ snapshots:
       has-symbols: 1.1.0
       hasown: 2.0.2
       math-intrinsics: 1.1.0
+    optional: true
 
   get-proto@1.0.1:
     dependencies:
       dunder-proto: 1.0.1
       es-object-atoms: 1.1.1
+    optional: true
 
-  gopd@1.2.0: {}
+  gopd@1.2.0:
+    optional: true
 
   graceful-fs@4.2.11: {}
 
   has-flag@4.0.0: {}
 
-  has-symbols@1.1.0: {}
+  has-symbols@1.1.0:
+    optional: true
 
   has-tostringtag@1.0.2:
     dependencies:
       has-symbols: 1.1.0
+    optional: true
 
   hasown@2.0.2:
     dependencies:
       function-bind: 1.1.2
+    optional: true
 
   is-fullwidth-code-point@3.0.0: {}
 
@@ -2680,12 +2690,17 @@ snapshots:
 
   js-tokens@9.0.1: {}
 
-  laravel-precognition@1.0.2:
+  laravel-precognition@2.0.0-beta.2(axios@1.13.6):
     dependencies:
-      axios: 1.13.6
       lodash-es: 4.17.23
-    transitivePeerDependencies:
-      - debug
+    optionalDependencies:
+      axios: 1.13.6
+
+  laravel-precognition@2.0.0-beta.3(axios@1.13.6):
+    dependencies:
+      lodash-es: 4.17.23
+    optionalDependencies:
+      axios: 1.13.6
 
   laravel-vite-plugin@2.1.0(vite@7.3.1(@types/node@25.5.0)(jiti@2.6.1)(lightningcss@1.32.0)):
     dependencies:
@@ -2803,13 +2818,16 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  math-intrinsics@1.1.0: {}
+  math-intrinsics@1.1.0:
+    optional: true
 
-  mime-db@1.52.0: {}
+  mime-db@1.52.0:
+    optional: true
 
   mime-types@2.1.35:
     dependencies:
       mime-db: 1.52.0
+    optional: true
 
   mlly@1.8.1:
     dependencies:
@@ -2823,8 +2841,6 @@ snapshots:
   muggle-string@0.4.1: {}
 
   nanoid@3.3.11: {}
-
-  object-inspect@1.13.4: {}
 
   obug@2.1.1: {}
 
@@ -2922,11 +2938,8 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  proxy-from-env@1.1.0: {}
-
-  qs@6.15.0:
-    dependencies:
-      side-channel: 1.1.0
+  proxy-from-env@1.1.0:
+    optional: true
 
   quansync@0.2.11: {}
 
@@ -2979,34 +2992,6 @@ snapshots:
 
   shell-quote@1.8.3: {}
 
-  side-channel-list@1.0.0:
-    dependencies:
-      es-errors: 1.3.0
-      object-inspect: 1.13.4
-
-  side-channel-map@1.0.1:
-    dependencies:
-      call-bound: 1.0.4
-      es-errors: 1.3.0
-      get-intrinsic: 1.3.0
-      object-inspect: 1.13.4
-
-  side-channel-weakmap@1.0.2:
-    dependencies:
-      call-bound: 1.0.4
-      es-errors: 1.3.0
-      get-intrinsic: 1.3.0
-      object-inspect: 1.13.4
-      side-channel-map: 1.0.1
-
-  side-channel@1.1.0:
-    dependencies:
-      es-errors: 1.3.0
-      object-inspect: 1.13.4
-      side-channel-list: 1.0.0
-      side-channel-map: 1.0.1
-      side-channel-weakmap: 1.0.2
-
   sirv@3.0.2:
     dependencies:
       '@polka/url': 1.0.0-next.29
@@ -3038,8 +3023,6 @@ snapshots:
   supports-color@8.1.1:
     dependencies:
       has-flag: 4.0.0
-
-  tailwind-merge@3.5.0: {}
 
   tailwindcss@0.0.0-insiders.bb2f170: {}
 

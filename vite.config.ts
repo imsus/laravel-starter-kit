@@ -11,6 +11,8 @@ import icons from "unplugin-icons/vite";
 import components from "unplugin-vue-components/vite";
 import { defineConfig } from "vite-plus";
 
+import inertia from "@inertiajs/vite";
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
@@ -18,7 +20,6 @@ export default defineConfig({
     "*": "vp check --fix",
   },
   lint: {
-    ignorePatterns: ["resources/js/types/auto-imports.d.ts", "resources/js/types/components.d.ts"],
     options: {
       typeAware: true,
       typeCheck: true,
@@ -28,8 +29,8 @@ export default defineConfig({
     laravel({
       input: ["resources/js/app.ts"],
       refresh: true,
-      ssr: "resources/js/ssr.ts",
     }),
+    inertia(),
     tailwindcss(),
     vue({
       template: {
