@@ -5,7 +5,7 @@ A modern Laravel starter kit with Inertia, Vue 3, and an enhanced developer expe
 ## Tech Stack
 
 - **PHP** 8.4+ with Laravel 12
-- **Runtime**: pnpm
+- **Runtime**: Vite+ (pnpm wrapper)
 - **Frontend**: Vue 3 with Inertia v2
 - **Styling**: Tailwind CSS 4
 - **State Management**: VueUse
@@ -71,7 +71,7 @@ const post = show(1); // { url: "/posts/1", method: "get" }
 ### Prerequisites
 
 - PHP 8.4+
-- pnpm
+- Vite+ (run `npm install -g vite-plus`)
 - Composer
 
 ### Installation
@@ -81,10 +81,10 @@ const post = show(1); // { url: "/posts/1", method: "get" }
 composer install
 
 # Install JavaScript dependencies
-pnpm install
+vp install
 
 # Start development servers
-pnpm run dev
+vp dev
 ```
 
 ### Available Commands
@@ -135,8 +135,6 @@ pnpm run dev
 | `vite.config.ts` | Vite plugins (AutoImport, Components, Icons, Wayfinder) |
 | `tsconfig.json`  | TypeScript configuration with paths alias               |
 | `mago.toml`      | Mago PHP linter/formatter rules                         |
-| `.oxlintrc.json` | Oxlint configuration                                    |
-| `.oxfmtrc.jsonc` | Oxfmt configuration                                     |
 | `boost.json`     | Laravel Boost MCP configuration                         |
 
 ## Icon Sets
@@ -156,4 +154,4 @@ Usage: `<Icon[Name] />` where Name is the icon identifier in kebab-case.
 - [Tailwind CSS](https://tailwindcss.com)
 - [VueUse](https://vueuse.org)
 - [Mago Documentation](https://mago.carthage.software)
-- [Vite+ Documentation](https://vite-plus.pages.dev)
+- [Vite+ Documentation](https://viteplus.dev/guide/)
