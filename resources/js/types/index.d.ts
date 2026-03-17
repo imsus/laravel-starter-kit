@@ -2,11 +2,25 @@ export interface Auth {
   user: User;
 }
 
-export type AppPageProps<
-  T extends Record<string, unknown> = Record<string, unknown>,
-> = T & {
+export interface Seo {
+  title?: string;
+  description?: string;
+  keywords?: string;
+}
+
+export interface Flash {
+  success?: string;
+  error?: string;
+  warning?: string;
+  info?: string;
+}
+
+export type AppPageProps<T extends Record<string, unknown> = Record<string, unknown>> = T & {
   name: string;
   auth: Auth;
+  seo: Seo;
+  locale: string;
+  flash: Flash;
   [key: string]: unknown;
 };
 

@@ -43,6 +43,18 @@ class HandleInertiaRequests extends Middleware
             'auth' => [
                 'user' => $request->user(),
             ],
+            'seo' => [
+                'title' => config('app.name'),
+                'description' => null,
+                'keywords' => null,
+            ],
+            'locale' => $request->input('locale', config('app.locale')),
+            'flash' => [
+                'success' => $request->session()->get('success'),
+                'error' => $request->session()->get('error'),
+                'warning' => $request->session()->get('warning'),
+                'info' => $request->session()->get('info'),
+            ],
         ];
     }
 }
