@@ -10,9 +10,7 @@ A modern Laravel starter kit with Inertia, Vue 3, and an enhanced developer expe
 - **Styling**: Tailwind CSS 4
 - **State Management**: VueUse
 - **Icons**: Lucide + Phosphor (auto-imported)
-- **Linting/Formatting**:
-  - PHP: Mago (replacing Pint)
-  - JS/TS/Vue: Ultracite (oxlint + oxfmt)
+- **Linting/Formatting**: Vite+ (oxlint + oxfmt)
 - **Type Safety**: TypeScript + Wayfinder
 
 ## Features
@@ -91,16 +89,17 @@ pnpm run dev
 
 ### Available Commands
 
-| Command              | Description                  |
-| -------------------- | ---------------------------- |
-| `pnpm run dev`       | Start Vite dev server        |
-| `pnpm run build`     | Build for production         |
-| `pnpm run build:ssr` | Build for SSR                |
-| `pnpm run format`    | Format JS/TS/Vue (ultracite) |
-| `pnpm run lint`      | Lint JS/TS/Vue (ultracite)   |
-| `composer lint`      | Lint PHP (mago)              |
-| `composer format`    | Format PHP (mago)            |
-| `php artisan test`   | Run Pest tests               |
+| Command            | Description               |
+| ------------------ | ------------------------- |
+| `vp dev`           | Start Vite dev server     |
+| `vp build`         | Build for production      |
+| `vp build:ssr`     | Build for SSR             |
+| `vp fmt`           | Format JS/TS/Vue          |
+| `vp lint`          | Lint JS/TS/Vue            |
+| `vp check`         | Format, lint & type check |
+| `composer lint`    | Lint PHP (mago)           |
+| `composer format`  | Format PHP (mago)         |
+| `php artisan test` | Run Pest tests            |
 
 ## Project Structure
 
@@ -157,4 +156,4 @@ Usage: `<Icon[Name] />` where Name is the icon identifier in kebab-case.
 - [Tailwind CSS](https://tailwindcss.com)
 - [VueUse](https://vueuse.org)
 - [Mago Documentation](https://mago.carthage.software)
-- [Ultracite Documentation](https://ultracite.js.org)
+- [Vite+ Documentation](https://vite-plus.pages.dev)
