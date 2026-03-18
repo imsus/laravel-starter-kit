@@ -43,7 +43,6 @@
     // "typeRoots": [],                                  /* Specify multiple folders that act like './node_modules/@types'. */
     "types": [
       "vite-plus/client",
-      "./resources/js/types",
       "unplugin-icons/types/vue",
       "node"
     ] /* Specify type package names to be included without being referenced in a source file. */,
