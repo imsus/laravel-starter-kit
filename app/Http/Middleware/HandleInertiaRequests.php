@@ -48,6 +48,7 @@ class HandleInertiaRequests extends Middleware
                 'description' => null,
                 'keywords' => null,
             ],
+            // @mago-ignore analysis:non-existent-method
             'locale' => $request->input('locale', config('app.locale')),
             'flash' => [
                 'success' => $request->session()->get('success'),

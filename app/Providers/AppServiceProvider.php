@@ -30,6 +30,7 @@ class AppServiceProvider extends ServiceProvider
 
     protected function configureDefaults(): void
     {
+        // @mago-ignore analysis:non-documented-method
         Date::use(CarbonImmutable::class);
 
         DB::prohibitDestructiveCommands(app()->isProduction());
