@@ -24,7 +24,7 @@
     @inertiaHead
 </head>
 
-<body class="font-sans antialiased">
+<body class="font-sans antialiased text-pretty [text-rendering:optimizeLegibility]">
     @inertia
 </body>
 

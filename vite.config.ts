@@ -40,9 +40,7 @@ export default defineConfig({
         },
       },
     }),
-    wayfinder({
-      formVariants: true,
-    }),
+    wayfinder(),
     autoImport({
       dirs: ["resources/js/composables"],
       dts: "resources/js/types/auto-imports.d.ts",
