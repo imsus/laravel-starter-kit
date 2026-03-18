@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "vp build",
-    "build:ssr": "vp build && vp build --ssr",
+    "build": "vue-tsc && vp build",
+    "build:ssr": "vue-tsc && vp build && vp build --ssr",
     "dev": "vp dev",
     "format": "vp fmt",
     "lint": "vp lint",
