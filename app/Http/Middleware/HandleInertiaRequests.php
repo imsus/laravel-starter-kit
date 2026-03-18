@@ -39,12 +39,12 @@ class HandleInertiaRequests extends Middleware
     {
         return [
             ...parent::share($request),
-            'name' => config('app.name'),
+            'name' => config('app.name', 'Laravel'),
             'auth' => [
                 'user' => $request->user(),
             ],
             'seo' => [
-                'title' => config('app.name'),
+                'title' => config('app.name', 'Laravel'),
                 'description' => null,
                 'keywords' => null,
             ],
