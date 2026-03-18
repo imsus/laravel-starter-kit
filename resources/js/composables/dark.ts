@@ -1,4 +1,5 @@
 import { useColorMode } from "@vueuse/core";
+import { computed } from "vue";
 
 export function useTheme() {
   const mode = useColorMode({

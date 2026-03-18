@@ -1,34 +1,29 @@
 <script setup lang="ts">
-import IconMonitor from "~icons/ph/monitor";
-import IconMoon from "~icons/ph/moon";
-import IconSun from "~icons/ph/sun";
+import { useColorMode } from "@vueuse/core";
 
-import { useTheme } from "@/composables/dark";
+const mode = useColorMode({
+  attribute: "class",
+  modes: {
+    auto: "system",
+    dark: "dark",
+    light: "light",
+  },
+});
 
-const { mode, setMode } = useTheme();
-
-const modes = [
-  { icon: IconSun, label: "Light", value: "light" },
-  { icon: IconMoon, label: "Dark", value: "dark" },
-  { icon: IconMonitor, label: "Auto", value: "auto" },
+const options = [
+  { label: "Light", value: "light" },
+  { label: "Dark", value: "dark" },
+  { label: "Auto", value: "auto" },
 ] as const;
 </script>
 
 <template>
-  <div class="flex items-center gap-1 rounded-lg bg-gray-100 p-1 dark:bg-gray-800">
-    <button
-      v-for="item in modes"
-      :key="item.value"
-      :title="item.label"
-      class="flex h-8 w-8 items-center justify-center rounded-md transition-colors"
-      :class="[
-        mode === item.value
-          ? 'bg-white text-gray-900 shadow-sm dark:bg-gray-700 dark:text-white'
-          : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200',
-      ]"
-      @click="setMode(item.value)"
-    >
-      <component :is="item.icon" class="h-4 w-4" />
-    </button>
-  </div>
+  <select
+    v-model="mode"
+    class="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
+  >
+    <option v-for="option in options" :key="option.value" :value="option.value">
+      {{ option.label }}
+    </option>
+  </select>
 </template>
