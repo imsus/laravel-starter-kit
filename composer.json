@@ -17,7 +17,7 @@
     "inertiajs/inertia-laravel": "^3.0.0-beta",
     "laravel/framework": "^13.0",
     "laravel/tinker": "^3.0",
-    "laravel/wayfinder": "^0.1.14",
+    "laravel/wayfinder": "dev-next",
     "nunomaduro/essentials": "^1.2"
   },
   "require-dev": {
@@ -112,6 +112,6 @@
       "php-http/discovery": true
     }
   },
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "prefer-stable": true
 }
